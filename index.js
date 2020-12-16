@@ -9,12 +9,11 @@ const port = process.env.PORT || 3000;
 const connectionString = 'mongodb://localhost:27017/';
 
 console.info('Conectando ao banco de dados...');
-/*
-const client = await mongodb.MongoClient.connect(connectionString, {
+
+/*const client = await mongodb.MongoClient.connect(connectionString, {
   useUnifiedTopology: true
-});
-*/
-  
+});*/
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -72,8 +71,8 @@ app.delete('/mensagens/:id', async (req, res) => {
   res.send('Mensagem foi excluída com sucesso!');
 });
 
-app.listen(3000, () => {
-  console.info('Servidor rodando em http://localhost:${port}.');
+app.listen(port, () => {
+  console.info(`Servidor rodando em http://localhost:${port}.`);
 });
 
 })();
