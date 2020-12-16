@@ -9,11 +9,12 @@ const port = process.env.PORT || 3000;
 const connectionString = 'mongodb://localhost:27017/';
 
 console.info('Conectando ao banco de dados...');
-
+/*
 const client = await mongodb.MongoClient.connect(connectionString, {
   useUnifiedTopology: true
 });
-
+*/
+  
 const app = express();
 
 app.use(bodyParser.json());
@@ -26,8 +27,8 @@ app.get('/', (req, res) => {
 // Create, Read (All or Single), Update, Delete
 // Criar, Ler (Tudo ou Individual), Atualizar e Remover
 
-const db = client.db('ocean_bancodados_15_12_2020');
-const mensagens = db.collection('mensagens');
+//const db = client.db('ocean_bancodados_15_12_2020');
+//const mensagens = db.collection('mensagens');
 
 // [CREATE] - Criar uma mensagem
 app.post('/mensagens', async (req, res) => {
