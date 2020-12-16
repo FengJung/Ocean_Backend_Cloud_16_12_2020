@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 (async () => {
 
-const connectionString = 'mongodb+srv://admin:vkOIY6wRI6DJb8Es@cluster0.jup2c.mongodb.net/ocean_bancodados_16_12_2020?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://admin:NpohoAsngHL3ZIzW@cluster0.jup2c.mongodb.net/ocean_bancodados_16_12_2020?retryWrites=true&w=majority';
 
 console.info('Conectando ao banco de dados...');
 
